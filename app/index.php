@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>HTML-start</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/mainicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <meta name="theme-color" content="#000">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pattaya&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<div class="menu">
+    <div class="overlay">
+        <nav class="overlayMenu">
+            <ul role="menu">
+                <li><a href="#" role="menuitem">Parity</a></li>
+                <li><a href="#" role="menuitem">Abstract</a></li>
+                <li><a href="#" role="menuitem">Educated</a></li>
+                <li><a href="#" role="menuitem">Decorum</a></li>
+                <li><a href="#" role="menuitem">Tenuous</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navBurger" role="navigation" id="navToggle"></div>
+</div>
+<header id="header" class="header">
+    <div class="container">
+        <div class="logo">
+            <p><span>S</span>mart</p>
+        </div>
+
+    </div>
+</header>
+
+
+<section id="main" class="main">
+    <div class="container">
+        <div class="row">
+            <div class="main__col">
+                <div class="title">
+                   <div class="wrap">
+                       <h1>
+                           <span>Smart</span> Agency Landign Page
+                       </h1>
+                       <p>
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates        doloremque rerum aspernatur dolorum at!
+                       </p>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-area">
+            <div class="row">
+                <div class="form-area__col">
+                    <div class="form-tab">
+                        <p>
+                            <span>Send</span> A Message
+                        </p>
+                        <form action="" id="form">
+                            <ul>
+                                <li>
+                                    <input id="name" name="name" type="text" placeholder="Your Name" required="">
+                                </li>
+                                <li>
+                                    <input id="email" name="email" type="email" placeholder="Your Email" required="">
+                                </li>
+                                <li>
+                                    <textarea id="text" name="text" placeholder="Your Message"></textarea>
+                                </li>
+                                <li>
+                                    <p><input type="submit" value="Send Message &#8605;" class="button">
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="working" class="working">
+    <div class="container">
+        <div class="row">
+            <div class="working__col">
+                <div class="wrap">
+                    <h2>
+                        <span>Working</span> Process
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectet ur adipiscing elit  Vestibulum bibend um vestibulum.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mark-area__col">
+                <div class="mark-area">
+                    <div class="mark-all mark1">
+                        <img src="img/uu.png" alt="">
+                        <h4>
+                            Koc Koi Tomi
+                        </h4>
+                        <p>
+                            Lorem ipsum is dummy lorem very dumy
+                        </p>
+                    </div>
+                    <button class="mark-btn-js">
+                        + Know More
+                    </button>
+                    <div class="order">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, voluptas!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mark-area__col">
+                <div class="mark-area">
+                    <div class="mark-all mark2">
+                        <img src="img/bug.png" alt="">
+                        <h4>
+                            Koc Koi Tomi
+                        </h4>
+                        <p>
+                            Lorem ipsum is dummy lorem very dumy
+                        </p>
+                    </div>
+                    <button class="mark-btn-js">
+                        + Know More
+                    </button>
+                    <div class="order">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, voluptas!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mark-area__col">
+                <div class="mark-area">
+                    <div class="mark-all mark3">
+                        <img src="img/gear.png" alt="">
+                        <h4>
+                            Koc Koi Tomi
+                        </h4>
+                        <p>
+                            Lorem ipsum is dummy lorem very dumy
+                        </p>
+                    </div>
+                    <button class="mark-btn-js">
+                        + Know More
+                    </button>
+                    <div class="order">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, voluptas!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mark-area__col">
+                <div class="mark-area">
+                    <div class="mark-all mark4">
+                        <img src="img/kart.png" alt="">
+                        <h4>
+                            Koc Koi Tomi
+                        </h4>
+                        <p>
+                            Lorem ipsum is dummy lorem very dumy
+                        </p>
+                    </div>
+                    <button class="mark-btn-js">
+                        + Know More
+                    </button>
+                    <div class="order">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, voluptas!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="featured">
+    <div class="container">
+        <div class="row">
+            <div class="featured__col">
+                <div class="wrap">
+                    <h2>
+                        <span>Featured</span>Works
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="popup-gallery">
+                <div class="row">
+                    <div class="gallery__col">
+                        <a href="img/p1.jpg"><img src="img/p1.jpg" alt=""></a>
+                    </div>
+                    <div class="gallery__col">
+                        <a href="img/p2.jpg"><img src="img/p2.jpg" alt=""></a>
+                    </div>
+                    <div class="gallery__col">
+                        <a href="img/p3.jpg"><img src="img/p3.jpg" alt=""></a>
+                    </div>
+                    <div class="gallery__col">
+                        <a href="img/p4.jpg"><img src="img/p4.jpg" alt=""></a>
+                    </div>
+                    <div class="gallery__col">
+                        <a href="img/p5.jpg"><img src="img/p5.jpg" alt=""></a>
+                    </div>
+                    <div class="gallery__col">
+                        <a href="img/p6.jpg"><img src="img/p6.jpg" alt=""></a>
+                    </div>
+                    <div class="gallery__col">
+                        <a href="img/p7.jpg"><img src="img/p7.jpg" alt=""></a>
+                    </div>
+                    <div class="gallery__col">
+                        <a href="img/p8.jpg"><img src="img/p8.jpg" alt=""></a>
+                    </div>
+                    <div class="gallery__col">
+                        <a href="img/p9.jpg"><img src="img/p9.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="services__col">
+                <div class="wrap">
+                    <h2>
+                        <span>Services</span> We Provide
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="buttons__col">
+                <div class="buttons">
+                    <ul>
+                        <li>
+                            <button class="serv-btn-js" data-ord="orders1"><img src="img/icon3.png" alt=""></button>
+                        </li>
+                        <li>
+                            <button class="serv-btn-js" data-ord="orders2"><img src="img/icon2.png" alt=""></button>
+                        </li>
+                        <li>
+                            <button class="serv-btn-js" data-ord="orders3"><img src="img/icon4.png" alt=""></button>
+                        </li>
+                        <li>
+                            <button class="serv-btn-js" data-ord="orders4"><img src="img/icon1.png" alt=""></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="orders__col">
+                <div class="orders" id="orders1">
+                    <div class="positioning">
+                        <div class="description">
+                            <h3>
+                                Modern App Design 1
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur.
+                            </p>
+                            <button  class="btn-text">
+                                + Know More
+                            </button>
+                            <p class="hide-text dis">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <img src="img/apple.jpg" alt="">
+                    </div>
+                </div>
+                <div class="orders" id="orders2">
+                    <div class="positioning">
+                        <div class="description">
+                            <h3>
+                                Modern App Design 2
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur.
+                            </p>
+                            <button  class="btn-text">
+                                + Know More
+                            </button>
+                            <p class="hide-text dis">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <img src="img/mac.png" alt="">
+                    </div>
+                </div>
+                <div class="orders" id="orders3">
+                    <div class="positioning">
+                        <div class="description">
+                            <h3>
+                                Modern App Design 3
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur.
+                            </p>
+                            <button class="btn-text">
+                                + Know More
+                            </button>
+                            <p class="hide-text  dis">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <img src="img/ip.png" alt="">
+                    </div>
+                </div>
+                <div class="orders" id="orders4">
+                    <div class="positioning">
+                        <div class="description">
+                            <h3>
+                                Modern App Design 4
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur.
+                            </p>
+                            <button  class="btn-text">
+                                + Know More
+                            </button>
+                            <p class="hide-text dis">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <img src="img/ipa.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team">
+    <div class="container">
+        <div class="row">
+            <div class="team__col">
+                <div class="wrap">
+                    <h2>
+                        <span>Team</span> Chinen & Skills
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="member">
+            <div class="row">
+                <div class="bg__col">
+                    <div class="bg">
+                        <div class="img">
+                            <img src="img/ph11.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Bedi Manosp <br> <span>UI/UX Parena</span></p>
+                        </div>
+                        <div class="skill">
+                            <p>UI/UX Parena</p>
+                            <div class="line">
+                                <div class="percent perc1" data-skill="80%"></div>
+                            </div>
+                            <p>English</p>
+                            <div class="line">
+                                <div class="percent perc2" data-skill="50%"></div>
+                            </div>
+                            <p>Communication</p>
+                            <div class="line">
+                                <div class="percent perc3" data-skill="95%"></div>
+                            </div>
+                            <div class="social">
+                                <p>Bedi Manosp <br> <span>UI/UX Parena</span></p>
+                                <img src="img/tw.png" alt="">
+                                <img src="img/fb.png" alt="">
+                                <img src="img/tw.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg__col">
+                    <div class="bg">
+                        <div class="img">
+                            <img src="img/ph22.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Bedi Manosp <br> <span>UI/UX Parena</span></p>
+                        </div>
+                        <div class="skill">
+                            <p>UI/UX Parena</p>
+                            <div class="line">
+                                <div class="percent perc1" data-skill="78%"></div>
+                            </div>
+                            <p>English</p>
+                            <div class="line">
+                                <div class="percent perc2" data-skill="63%"></div>
+                            </div>
+                            <p>Communication</p>
+                            <div class="line">
+                                <div class="percent perc3" data-skill="40%"></div>
+                            </div>
+                            <div class="social">
+                                <p>Bedi Manosp <br> <span>UI/UX Parena</span></p>
+                                <img src="img/tw.png" alt="">
+                                <img src="img/fb.png" alt="">
+                                <img src="img/tw.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg__col">
+                    <div class="bg">
+                        <div class="img">
+                            <img src="img/ph33.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Bedi Manosp <br> <span>UI/UX Parena</span></p>
+                        </div>
+                        <div class="skill">
+                            <p>UI/UX Parena</p>
+                            <div class="line">
+                                <div class="percent perc1" data-skill="10%"></div>
+                            </div>
+                            <p>English</p>
+                            <div class="line">
+                                <div class="percent perc2" data-skill="80%"></div>
+                            </div>
+                            <p>Communication</p>
+                            <div class="line">
+                                <div class="percent perc3" data-skill="35%"></div>
+                            </div>
+                            <div class="social">
+                                <p>Bedi Manosp <br> <span>UI/UX Parena</span></p>
+                                <img src="img/tw.png" alt="">
+                                <img src="img/fb.png" alt="">
+                                <img src="img/tw.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="clients">
+    <div class="container">
+        <div class="row">
+            <div class="clients__col">
+                <div class="wrap">
+                    <h2>
+                        <span>Clients</span>Said.
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="client__col">
+                <div class="slick-sl">
+                    <div class="client">
+                        <div class="photo">
+                            <img src="img/client1.jpg" alt="">
+                        </div>
+                        <div class="review">
+                            <p>
+                                “This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”
+                            </p>
+                            <p class="stars">
+                                ★ ★ ★ ★ ★
+                            </p>
+                            <p>
+                                Kita Say, HK Director
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="photo">
+                            <img src="img/client2.jpg" alt="">
+                        </div>
+                        <div class="review">
+                            <p>
+                                “This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”
+                            </p>
+                            <p class="stars">
+                                ★ ★ ★ ★ ★
+                            </p>
+                            <p>
+                                Kita Say, HK Director
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="photo">
+                            <img src="img/client3.jpg" alt="">
+                        </div>
+                        <div class="review">
+                            <p>
+                                “This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”
+                            </p>
+                            <p class="stars">
+                                ★ ★ ★ ★ ★
+                            </p>
+                            <p>
+                                Kita Say, HK Director
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="photo">
+                            <img src="img/client4.jpg" alt="">
+                        </div>
+                        <div class="review">
+                            <p>
+                                “This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”
+                            </p>
+                            <p class="stars">
+                                ★ ★ ★ ★ ★
+                            </p>
+                            <p>
+                                Kita Say, HK Director
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="photo">
+                            <img src="img/client5.jpg" alt="">
+                        </div>
+                        <div class="review">
+                            <p>
+                                “This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”
+                            </p>
+                            <p class="stars">
+                                ★ ★ ★ ★ ★
+                            </p>
+                            <p>
+                                Kita Say, HK Director
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="photo">
+                            <img src="img/client6.jpg" alt="">
+                        </div>
+                        <div class="review">
+                            <p>
+                                “This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”
+                            </p>
+                            <p class="stars">
+                                ★ ★ ★ ★ ★
+                            </p>
+                            <p>
+                                Kita Say, HK Director
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="logos">
+    <div class="container">
+        <div class="row">
+            <div class="logos__col">
+                <img src="img/logo1.png" alt="">
+            </div>
+            <div class="logos__col">
+                <img src="img/logo2.png" alt="">
+            </div>
+            <div class="logos__col">
+                <img src="img/logo3.png" alt="">
+            </div>
+            <div class="logos__col">
+                <img src="img/logo4.png" alt="">
+            </div>
+            <div class="logos__col">
+                <img src="img/logo5.png" alt="">
+            </div>
+            <div class="logos__col">
+                <img src="img/logo6.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="button__col">
+                <button>Contact Us</button>
+            </div>
+        </div>
+       <div class="row">
+           <div class="social__col">
+               <div class="social">
+                   <div class="icon">
+                       <img src="img/social1.png" alt="">
+                   </div>
+                   <div class="icon">
+                       <img src="img/social2.png" alt="">
+                   </div>
+                   <div class="icon">
+                       <img src="img/social3.png" alt="">
+                   </div>
+                   <div class="icon">
+                       <img src="img/social4.png" alt="">
+                   </div>
+               </div>
+           </div>
+           <div class="credits__col">
+               <div class="credits">
+                    <p>© 2015 - 2016 Deviserweb Ltd.</p>
+               </div>
+           </div>
+       </div>
+    </div>
+</footer>
+
+
+
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
