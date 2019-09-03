@@ -529,6 +529,9 @@ span {
   .client {
     position: relative;
     padding: 50px 10px 10px 10px;
+    &:focus {
+      outline: none;
+    }
     &__col {
       @include make-col(12);
     }
