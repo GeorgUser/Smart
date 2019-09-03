@@ -1,14 +1,13 @@
 @import "vars";
-@import "fonts";
 @import "libs";
 
 ::placeholder {
-	color: #666
+  color: $c-gray
 }
 
 //::selection {
 //	background-color: #1ccb02;
-//	color: #fff
+//	color: $white
 //}
 
 html, body {
@@ -30,7 +29,7 @@ body {
 }
 
 input, textarea {
-  border: #666 1px solid;
+  border: $c-gray 1px solid;
   outline: none;
   &:focus:required:invalid {
     border-color: red
@@ -44,7 +43,7 @@ input, textarea {
 button {
   cursor: pointer;
   &:hover {
-    box-shadow: 0 0 30px #0b0b0b;
+    box-shadow: 0 0 10px $shadow;
   }
   &:focus {
     outline: 0;
@@ -70,30 +69,34 @@ span {
 }
 
 .logo {
-  z-index: 1;
   border: 2px solid $c-gray;
   margin-top: 10px;
   font-size: 30px;
-  display: inline-block;
-  vertical-align: top;
   padding: 0 10px;
   line-height: 35px;
-  p {
+  a {
     margin-bottom: 0;
+    color: $black;
+    text-decoration: none;
   }
 }
 
+.logo:first-letter {
+  text-transform: uppercase;
+  color: $c-orange;
+}
+
 .main {
-  height: 100vh;
-  background-color: #f5f5f5;
-  padding-top: 30vh;
+  height: 700px;
+  background-color: $bg-gray;
+  padding-top: 200px;
   color: $c-gray;
   @include media-breakpoint-down(md) {
     padding-top: 150px;
     height: max-content;
     padding-bottom: 30px;
   }
-  &__col{
+  &__col {
     @include make-col(12);
   }
 
@@ -110,20 +113,19 @@ span {
     position: relative;
     padding: 0 30px;
     width: 100%;
-    z-index: 1;
     .form-tab {
       position: absolute;
       left: 10px;
-      box-shadow: 0 0 30px #4b4b4b;
+      box-shadow: 0 0 10px $c-gray;
       padding-top: 20px;
       text-align: center;
-      background-color: #fff;
+      background-color: $white;
       width: 100%;
       height: 390px;
       input, textarea {
-        border-top:none;
-        border-right:none;
-        border-left:none;
+        border-top: none;
+        border-right: none;
+        border-left: none;
         margin-top: 20px;
         width: 80%;
         resize: none;
@@ -138,10 +140,10 @@ span {
         width: 60%;
       }
     }
-    &__col{
+    &__col {
       @include make-col(5);
       position: relative;
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         @include make-col(12);
         .form-tab {
           left: 0;
@@ -155,55 +157,55 @@ span {
 
 .working {
   padding: 150px 0 100px;
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     padding: 100px 0 50px;
   }
-  &__col{
+  &__col {
     @include make-col(12);
   }
   .mark-area {
     padding: 10px;
-    &__col{
+    &__col {
       @include make-col(3);
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         @include make-col(6);
       }
-      @include media-breakpoint-down(sm){
+      @include media-breakpoint-down(sm) {
         @include make-col(6);
       }
-      @include media-breakpoint-down(xs){
+      @include media-breakpoint-down(xs) {
         @include make-col(12);
       }
     }
     &:hover .mark-all {
-      box-shadow: 0 0 30px #0b0b0b;
+      box-shadow: 0 0 10px $shadow;
     }
     margin-top: 110px;
     text-align: center;
     position: relative;
     .mark-all {
       padding: 50px 20px 70px;
-      color: #e0effd;
+      color: $c-mark;
     }
     img {
       margin-bottom: 20px;
       height: 50px;
     }
     .mark1 {
-      background-color: #4eb2f7;
+      background-color: $mark1;
     }
     .mark2 {
-      background-color: #c049f8;
+      background-color: $mark2;
     }
     .mark3 {
-      background-color: #817eff;
+      background-color: $mark3;
     }
     .mark4 {
-      background-color: #f74770;
+      background-color: $mark4;
     }
     button {
-      background-color: #fff;
-      box-shadow: 0 0 20px #b0b0b0;
+      background-color: $white;
+      box-shadow: 0 0 20px $gray;
       width: 80%;
       border-radius: 20px;
       margin: 0 auto;
@@ -215,11 +217,11 @@ span {
       border: none;
       &:hover {
         padding: 8px;
-        box-shadow: 0 0 30px #0b0b0b;
+        box-shadow: 0 0 10px $gray;
       }
     }
     .order {
-      box-shadow: 0 0 20px #b0b0b0;
+      box-shadow: 0 0 20px $gray;
       display: none;
       padding: 10px 5px 20px 5px;
     }
@@ -234,6 +236,11 @@ span {
   width: 100vh !important;
 }
 
+.mfp-close:hover,
+.mfp-arrow:hover {
+  box-shadow: none;
+}
+
 .featured {
   padding-top: 126px;
   padding-bottom: 120px;
@@ -244,23 +251,23 @@ span {
   .wrap {
     margin-bottom: 120px;
   }
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     padding: 50px 0 50px;
     .wrap {
       margin-bottom: 0;
     }
   }
   .gallery {
-    &__col{
+    &__col {
       padding: 10px;
       @include make-col(4);
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         @include make-col(6);
       }
-      @include media-breakpoint-down(sm){
+      @include media-breakpoint-down(sm) {
         @include make-col(6);
       }
-      @include media-breakpoint-down(xs){
+      @include media-breakpoint-down(xs) {
         @include make-col(12);
       }
     }
@@ -269,15 +276,11 @@ span {
     width: 100%;
     text-align: center;
     &:hover {
-      box-shadow: 0 0 30px $shadow;
+      box-shadow: 0 0 10px $shadow;
     }
   }
 
 }
-
-
-
-
 
 #orders2, #orders3, #orders4 {
   display: none;
@@ -288,19 +291,19 @@ span {
   .wrap {
     margin-bottom: 100px;
   }
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     padding: 40px 0;
     .wrap {
       margin-bottom: 30px;
     }
   }
-  &__col{
+  &__col {
     @include make-col(12);
   }
   .buttons {
-    &__col{
+    &__col {
       @include make-col(2);
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         @include make-col(12);
         li {
           display: inline-block;
@@ -308,13 +311,13 @@ span {
           vertical-align: top;
         }
       }
-      @include media-breakpoint-down(sm){
+      @include media-breakpoint-down(sm) {
         @include make-col(12);
         li {
           margin: 0 5px;
         }
       }
-      @include media-breakpoint-down(xs){
+      @include media-breakpoint-down(xs) {
         @include make-col(12);
       }
     }
@@ -323,15 +326,15 @@ span {
       width: 105px;
       height: 95px;
       margin-bottom: 10px;
-      background-color: #fbfbfb;
-      border: 2px solid #f7f7f7;
+      background-color: $bg-white;
+      border: 2px solid $bg-gray;
       padding-top: 23px;
       overflow: hidden;
       img {
         margin-left: 17px;
       }
       &:hover {
-        background-color: #fff;
+        background-color: $white;
       }
     }
   }
@@ -344,8 +347,8 @@ span {
         margin-top: 40px;
       }
       button {
-        background-color: #fff;
-        box-shadow: 0 0 20px #b0b0b0;
+        background-color: $white;
+        box-shadow: 0 0 20px $gray;
         width: 200px;
         border-radius: 24px;
         padding: 10px;
@@ -355,10 +358,10 @@ span {
         font-size: 20px;
         &:hover {
           padding: 11px;
-          box-shadow: 0 0 30px #0b0b0b;
+          box-shadow: 0 0 10px $gray;
         }
       }
-      .hide-text{
+      .hide-text {
         display: none;
       }
       .show-text {
@@ -370,12 +373,12 @@ span {
       max-height: 403px;
       margin-top: 10px;
     }
-    &__col{
+    &__col {
       @include make-col(10);
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         @include make-col(12);
       }
-      @include media-breakpoint-down(sm){
+      @include media-breakpoint-down(sm) {
         @include make-col(12);
         .positioning {
           margin: 0 5px;
@@ -383,7 +386,7 @@ span {
           text-align: center;
         }
       }
-      @include media-breakpoint-down(xs){
+      @include media-breakpoint-down(xs) {
         @include make-col(12);
       }
     }
@@ -395,10 +398,10 @@ span {
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     padding: 40px 0;
   }
-  &__col{
+  &__col {
     @include make-col(12);
   }
   p {
@@ -408,13 +411,13 @@ span {
     &__col {
       padding: 10px;
       @include make-col(4);
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         @include make-col(12);
       }
-      @include media-breakpoint-down(sm){
+      @include media-breakpoint-down(sm) {
         @include make-col(12);
       }
-      @include media-breakpoint-down(xs){
+      @include media-breakpoint-down(xs) {
         @include make-col(12);
       }
     }
@@ -436,7 +439,7 @@ span {
     .img {
       overflow: hidden;
       max-width: 360px;
-      max-height: 450px;
+      max-height: 380px;
       margin: 0 auto;
       img {
         width: 100%;
@@ -445,7 +448,7 @@ span {
     .name {
       width: 78%;
       margin: 0 auto;
-      background-color: #fff;
+      background-color: $white;
       position: absolute;
       bottom: -20px;
       left: 0;
@@ -475,7 +478,7 @@ span {
       transition-delay: 0.6s;
       .line {
         width: 70%;
-        border: 1.4px solid #0b0b0b;
+        border: 1.4px solid $shadow;
         background-color: $c-gray;
         height: 7px;
         margin: 0 auto 10px;
@@ -491,14 +494,15 @@ span {
       }
       .social {
         margin-top: 50px;
-        font-size: 30px;
+        font-size: 20px;
         line-height: 30px;
         font-weight: bold;
         span {
           font-size: 16px;
         }
-        img {
-          margin: 5px;
+        i {
+          margin: 0 5px;
+          cursor: pointer;
         }
       }
 
@@ -513,7 +517,7 @@ span {
   .wrap {
     margin-bottom: 70px;
   }
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     padding: 40px 0;
     .wrap {
       margin-bottom: 30px;
@@ -556,45 +560,29 @@ span {
 // slick-slaider
 
 .slick-prev {
-  z-index: 1;
-  border-radius: 50%;
-  width: 42px;
-  height: 42px;
-  box-shadow: 0 0 20px $shadow;
-  background-color: #fff;
-  &:focus, &:active, &:visited {
-    z-index: 1;
-    opacity: 1;
-  }
+  width: 0;
+  height: 0;
   &:before {
-    color: #0b0b0b;
-    font-size: 30px;
-    line-height: 47px;
-  }
-  &:hover {
-    background-color: $c-orange;
-  }
-}
-.slick-next {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  box-shadow: 0 0 20px $shadow;
-  background-color: #fff;
-  &:focus, &:active {
-    z-index: 1;
-    opacity: 1;
-  }
-  &:before {
-    color: #0b0b0b;
-    font-size: 30px;
-    line-height: 47px;
-  }
-  &:hover {
-    background-color: $c-orange;
+    content: "\f104";
+    color: $shadow;
+    font-size: 50px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
   }
 }
 
+.slick-next {
+  width: 0;
+  height: 0;
+  right: 0;
+  &:before {
+    content: "\f105";
+    color: $shadow;
+    font-size: 50px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+  }
+}
 
 .slick-dots {
   bottom: -45px;
@@ -605,7 +593,7 @@ span {
 }
 
 .slick-dots li button {
-  background-color: #b0b0b0;
+  background-color: $gray;
   padding: 2px;
   height: 2px;
   width: 17px;
@@ -620,7 +608,7 @@ span {
     opacity: 0;
   }
   &:hover {
-    background-color: #fff;
+    background-color: $white;
     box-shadow: 0 0 20px $shadow;
   }
 }
@@ -630,7 +618,7 @@ span {
   padding-bottom: 90px;
   background-color: $bg-gray;
   text-align: center;
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     padding: 40px 0;
   }
   img {
@@ -638,13 +626,13 @@ span {
   }
   &__col {
     @include make-col(2);
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(md) {
       @include make-col(4);
     }
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
       @include make-col(4);
     }
-    @include media-breakpoint-down(xs){
+    @include media-breakpoint-down(xs) {
       @include make-col(6);
     }
   }
@@ -660,29 +648,29 @@ span {
   button {
     padding: 5px 30px;
     border-radius: 20px;
-    border: 1px solid #000;
+    border: 1px solid $black;
     background-color: $bg-gray;
     margin-bottom: 30px;
   }
   .social {
     .icon {
+      cursor: pointer;
       float: right;
       margin: 0 10px;
       background-color: $bg-logos;
       border-radius: 50%;
       height: 50px;
       width: 50px;
-      img {
-        margin: 16px 5px;
-      }
+      font-size: 30px;
+      font-weight: 900;
       &:hover {
-        background-color: $c-orange;
+        background-color: $white;
         box-shadow: 0 0 15px $shadow;
       }
     }
     &__col {
       @include make-col(6);
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         @include make-col(12);
         .icon {
           float: none;
@@ -690,7 +678,7 @@ span {
           margin: 0 20px;
         }
       }
-      @include media-breakpoint-down(xs){
+      @include media-breakpoint-down(xs) {
         @include make-col(12);
         .icon {
           margin: 20px 40px;
@@ -703,7 +691,7 @@ span {
     line-height: 52px;
     &__col {
       @include make-col(6);
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         @include make-col(12);
         .credits {
           text-align: center;
@@ -713,20 +701,39 @@ span {
   }
 }
 
-
-
-//media
-
-@media screen and (max-width: 992px) {
-
+.facebook, .twitter, .instagram, .youtube {
+  color: $shadow;
+  text-decoration: none;
+  a {
+    color: $c-gray;
+    text-decoration: none;
+  }
 }
 
-@media screen and (max-width: 768px) {
-
+.facebook:hover {
+  color: $facebook;
+  a {
+    color: $facebook;
+  }
 }
 
-@media screen and (max-width: 544px) and (min-height: 800px) {
-
+.twitter:hover {
+  color: $twitter;
+  a {
+    color: $twitter;
+  }
 }
 
-@import "media"; // Always at the end
+.instagram:hover {
+  color: $instagram;
+  a {
+    color: $instagram;
+  }
+}
+
+.youtube:hover {
+  color: $youtube;
+  a {
+    color: $youtube;
+  }
+}

@@ -3,11 +3,18 @@ $(document).ready(function(){
         $(this).next('.order').toggleClass('btn-order');
         var btn_order = $(this).parent().find('.order');
         if((btn_order).hasClass('btn-order')){
-            $(this).html('Close')}
+            $(this).html('<i class="fas fa-angle-double-up"></i> Close');
+        }
         else {
-            $(this).html('v Know More');
+            $(this).html('<i class="fas fa-angle-down"></i> Know More');
         }
     });
+
+
+    // $('.mark-btn-js').click(function(){
+    //
+    // });
+
 
     $('.serv-btn-js').click(function () {
         var atr = $(this).data('ord');
@@ -23,13 +30,6 @@ $(document).ready(function(){
 
 
     $('.bg').mouseenter(function () {
-        // var skill_1 = $(this).find('.perc1').data('skill');
-        // var skill_2 = $(this).find('.perc2').data('skill');
-        // var skill_3 = $(this).find('.perc3').data('skill');
-        // $(this).find('.perc1').css('width', '0%' ).animate({width: skill_1}, 1000);
-        // $(this).find('.perc2').css('width', '0%' ).animate({width: skill_2}, 1000);
-        // $(this).find('.perc3').css('width', '0%' ).animate({width: skill_3}, 1000);
-
         var skill = '';
         for(var i=1; i <= 3; i++){
             skill = $(this).find('.perc'+i).data('skill');
